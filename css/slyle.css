@@ -324,6 +324,94 @@
   font-weight:bold;  
   margin-left:3px;  
   }
+
+  .product-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 65px;
+ 
+  }
+  .tit-products{
+    text-align:center;
+  }
+  .tit-products::after{
+       content:"";
+      display:flex;
+      width:65px;
+      height:3px; 
+      background-color:#b59f5b;
+      margin-top:10px;
+      margin-bottom:25px;
+      margin-left:auto;
+      margin-right:auto;
+    
+    }
+
+  .product-box{
+    width: 25%;
+    margin-right: 105px;
+  }
+  .product-box:nth-of-type(3){
+    margin-right: 0;
+  }
+  .title-product{
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+
+  .product-text{
+    border: #b59f5b solid 2px;
+    padding-bottom: 70px;
+  }
+  .product-text-card{
+      font-size: 15px;
+      font-family: "open sans";
+      color: rgb(15, 13, 14);
+      margin-top: 10px;
+      margin-bottom: 25px;
+      
+    }
+    .link-here{
+      color:#b59f5b; 
+      text-decoration: underline;
+    }
+
+  .old-cost{
+    text-decoration: line-through;
+      font-size: 15.697px;
+      font-family: "OpenSans";
+      color: rgb(15, 13, 14);
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    .new-cost{
+        font-size: 22.424px;
+        font-family: "OpenSans";
+        color: rgb(15, 13, 14);
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: left;
+      }
+      .shop{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+        }
+
+  .button-search-shop{
+    width: 135px;
+    height: 50px;
+    border:none;
+    background-color:#b59f5b; 
+    color:#fff;
+    font-family:"open sans";
+    font-size:14px;  
+    font-weight:bold;
+margin-left: 65px;
+  }
   .footer{
    width:1200px;
    padding:0 15px 0 15px;
