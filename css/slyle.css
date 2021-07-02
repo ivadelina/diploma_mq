@@ -179,17 +179,7 @@ h2 {
     background-image: url(../images/trend4.jpg);
 }
 
-.trend-card {
-    background-color: #000;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin-right: 2px;
-    width: 25%;
-    position: relative;
-    display: flex;
-    height: 315px;
-}
+
 
 .trend-card:last-child {
     margin-right: 0;
@@ -207,19 +197,29 @@ h2 {
     bottom: 0;
     left: 0;
 }
-
+.trend-card {
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-right: 2px;
+    width: 25%;
+    position: relative;
+    display: flex;
+    height: 315px;
+    justify-content: center;
+}
 .trend-card-content {
     display: flex;
     flex-direction: column;
     padding: 35px 30px;
     margin-bottom: 15px;
-    margin-right: 15px;
-    margin-left: 15px;
     margin-top: auto;
     border: rgba(181, 159, 91, 0.8) solid 3px;
-    min-width: 345px;
     position: relative;
     z-index: 3;
+    width:90%;
+
 }
 
 .trend-header {
@@ -630,10 +630,122 @@ h3 {
     padding-top: 70px;
     padding-bottom: 40px;
 }
+.button-pop{
+    width: 5px;
+}
 
 .pop-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.pop-container{
+    width: 390px;
+    padding: 30px 55px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #fff;
+
+
+}
+.select-visit{
+    width: 330px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: #f4f7f6;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background-image:url("../svg/form-arrows.svg");
+    background-repeat:no-repeat;
+    background-position:right 5px center;
+    background-size: 10px;
+}
+.field{
+    width: 330px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: #f4f7f6;
+    margin-bottom: 10px;
+    min-width: 500;
+}
+.button-pop{
+    height: 50px;
+    width: 330px;
+    border: none;
+    background-color: #b59f5b;
+    color: #fff;
+    font-family: "open sans";
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.visit-form{
+    margin-bottom: 30px;
+
+}
+.subscribe{
+    margin-bottom: 30px; 
+}
+.form-hint{
+margin-bottom: 10px;
+font-size: 15px;
+font-family: "open sans";
+color: rgb(15, 13, 14);
+width: 330px;
+}
+.pop-container::before{
+    content: "кнопка тут";
+    background: url("../svg/form-x.svg");
+background-repeat: no-repeat;
+background-position: right 5px center;
+font-size: large;
+}
+.pop-up{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    z-index: 10;
+    display: flex;
+}
+.tit-pop{
+    margin-bottom: 0;
+}
+.subscribe{
+    margin-left: 0;
+    padding-left: 0;
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+}
+.radio-group-text::before{
+    content:"";
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background-image:url("../svg/form-empty-circle.svg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:20px;
+    vertical-align:middle;
+    margin-right:8px;
+}
+.radio:checked ~ .radio-group-text::before{
+background-image:url("../svg/form-circle.svg");
+}
+.radio{
+    position: absolute;
+    clip:rect(1px,1px,1px,1px);
+    height:1px;
+    width:1px;
+}
+.radio-group{
+    display: flex;
+    margin-right: 15px;
 }
