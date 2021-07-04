@@ -88,7 +88,9 @@ body {
 .menu-links:last-child {
     margin-right: 15px;
 }
-
+.menu-burger__header{
+    display: none;
+}
 .title {
     display: flex;
     justify-content: center;
@@ -630,15 +632,28 @@ h3 {
     padding-top: 70px;
     padding-bottom: 40px;
 }
-.button-pop{
-    width: 5px;
+.pop-up::before{
+    content: "";
+    background: url("../svg/form-x.svg");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    width: 390px;
+    margin: auto;
 }
-
-.pop-box {
+.button-pop-up{
+    width: 390px;
+}
+.pop-up{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    z-index: 100;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: none;
 }
 .pop-container{
     width: 390px;
@@ -647,8 +662,25 @@ h3 {
     flex-direction: column;
     margin: auto;
     background-color: #fff;
-
-
+}
+.tit-pop{
+    margin-bottom: 0;
+}
+.pop-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.visit-form{
+    margin-bottom: 30px;
+}
+.form-hint{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: "open sans";
+    color: rgb(15, 13, 14);
+    width: 330px;
 }
 .select-visit{
     width: 330px;
@@ -662,6 +694,39 @@ h3 {
     background-repeat:no-repeat;
     background-position:right 5px center;
     background-size: 10px;
+}
+.subscribe{
+    margin-bottom: 30px; 
+    margin-left: 0;
+    padding-left: 0;
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+}
+.radio-group{
+    display: flex;
+    margin-right: 15px;
+}
+.radio{
+    position: absolute;
+    clip:rect(1px,1px,1px,1px);
+    height:1px;
+    width:1px;
+}
+.radio-group-text::before{
+    content:"";
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background-image:url("../svg/form-empty-circle.svg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:20px;
+    vertical-align:middle;
+    margin-right:8px;
+}
+.radio:checked ~ .radio-group-text::before{
+    background-image:url("../svg/form-circle.svg");
 }
 .field{
     width: 330px;
@@ -681,117 +746,48 @@ h3 {
     font-family: "open sans";
     font-size: 14px;
     font-weight: bold;
-
-}
-.visit-form{
-    margin-bottom: 30px;
-
-}
-.subscribe{
-    margin-bottom: 30px; 
-}
-.form-hint{
-margin-bottom: 10px;
-font-size: 15px;
-font-family: "open sans";
-color: rgb(15, 13, 14);
-width: 330px;
-}
-.pop-up::before{
-content: "кнопка тут";
-background: url("../svg/form-x.svg");
-background-repeat: no-repeat;
-background-position: right 5px center;
-width: 390px;
-margin: auto;
-
-}
-.pop-up{
-    width:100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.7);
-    overflow:hidden;
-    position:fixed;
-    top:0;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    display: none;
-
-}
-.tit-pop{
-    margin-bottom: 0;
-}
-.subscribe{
-    margin-left: 0;
-    padding-left: 0;
-    width: 330px;
-    display: flex;
-    flex-direction: row;
-}
-.radio-group-text::before{
-    content:"";
-    display:inline-block;
-    width:20px;
-    height:20px;
-    background-image:url("../svg/form-empty-circle.svg");
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size:20px;
-    vertical-align:middle;
-    margin-right:8px;
-}
-.radio:checked ~ .radio-group-text::before{
-background-image:url("../svg/form-circle.svg");
-}
-.radio{
-    position: absolute;
-    clip:rect(1px,1px,1px,1px);
-    height:1px;
-    width:1px;
-}
-.radio-group{
-    display: flex;
-    margin-right: 15px;
-}
-.button-pop-up{
-    width: 390px;
 }
 @media(min-width:768px) and (max-width:1199px){
+    .menu-burger__header {
+        position: relative; 
+        width: 40px; 
+        height: 35px;
+        display: flex;
+     }
+     .burger{
+         fill:#fff;
+     }
     .menu-link{
         display:none;
     }
-    .trend-card{
-width:49.5%;
-margin-bottom: 0.5%;
+    .header-container {
+        padding: 50px 35px 130px 35px;
     }
     .trend-cards{
         flex-wrap:wrap;
+    }
+    .trend-card{
+        width:49.5%;
+        margin-bottom: 0.5%;
     }
     .item{
         display:flex;
         flex-direction: column;
         width:50%;
     }
-    .header-container {
-                padding: 50px 35px 130px 35px;
-    }
-    .right-box{
-        width:35%;
-           }
     .item-text{
         width:380px;  
         margin-top: 10px;
     }
     .main{
-justify-content: space-around;
+        justify-content: space-around;
     }
-.product-container{
-    flex-wrap: wrap;
+    .product-container{
+        flex-wrap: wrap;
     }
     .product-box{
         width: 43%;
-    margin-right: 4%;
-    margin-bottom: 4%;
+        margin-right: 4%;
+        margin-bottom: 4%;
     }
 }
