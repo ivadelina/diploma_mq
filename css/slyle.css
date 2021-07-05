@@ -782,12 +782,60 @@ h3 {
     .main{
         justify-content: space-around;
     }
+    .news{
+        margin-right: 35px;
+    }
     .product-container{
         flex-wrap: wrap;
-    }
+        justify-content: left;
+      }
     .product-box{
         width: 43%;
-        margin-right: 4%;
-        margin-bottom: 4%;
+        margin-right: 10px;
+        margin-bottom: 30px;
     }
+}
+@media(max-width:767px){
+    .menu-burger__header {
+        position: relative; 
+        width: 40px; 
+        height: 35px;
+        display: flex;
+     }
+     .burger{
+         fill:#fff;
+     }
+     .menu-link{
+         display: none;
+     }
+     .logo{
+         width:60%;
+         
+     }
+     .trend-cards{
+        flex-wrap:wrap;
+    }
+     .trend-card{
+        width:100%;
+        margin-bottom: 5px;
+    }
+    .item{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .item-text{
+        width:50%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-box {
+        width: 100%;
+    }
+
+    
+
+
 }
