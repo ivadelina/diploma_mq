@@ -296,7 +296,7 @@
                 <picture class="product-picture">
                     <source srcset="images/shop-item-desk1.jpg" media="(min-width:1200px)">
                     <source srcset="images/shop-item-tablet1.jpg" media="(min-width:768px)">
-                    <source srcset="images/shop-item-mobil1.jpg" media="(min-width:360px)">
+                    <source srcset="images/shop-item-mobile1.jpg" media="(min-width:360px)">
                     <img src="images/shop-item-desk1.jpg" alt="Подушка">
                 </picture>
                 <div class="product-text">
@@ -323,7 +323,7 @@
                 <picture class="product-picture">
                     <source srcset="images/shop-item-desk2.jpg" media="(min-width:1200px)">
                     <source srcset="images/shop-item-tablet2.jpg" media="(min-width:768px)">
-                    <source srcset="images/shop-item-mobil2.jpg" media="(min-width:360px)">
+                    <source srcset="images/shop-item-mobile2.jpg" media="(min-width:360px)">
                     <img src="images/shop-item-desk2.jpg" alt="Подушка">
                 </picture>
                 <div class="product-text">
@@ -350,7 +350,7 @@
                 <picture class="product-picture">
                     <source srcset="images/shop-item-desk3.jpg" media="(min-width:1200px)">
                     <source srcset="images/shop-item-tablet3.jpg" media="(min-width:768px)">
-                    <source srcset="images/shop-item-mobil3.jpg" media="(min-width:360px)">
+                    <source srcset="images/shop-item-mobile3.jpg" media="(min-width:360px)">
                     <img src="images/shop-item-desk3.jpg" alt="Подушка">
                 </picture>
                 <div class="product-text">
@@ -398,15 +398,16 @@
         </div>
     </footer>
     <section class="pop-up">
-        <label class="label-button">
-            <span class="hidden">Закрыть окно</span>
-            <button class="button-pop-up" type="submit">
-            </button>
-        </label>
         <div class="pop-container">
+            <label class="label-button">
+                <span class="hidden">Закрыть окно</span>
+                <button class="button-pop-up" type="button">
+                </button>
+            </label>
             <h2 class="tit tit-products tit-pop">ваш фидбек</h2>
             <div class="pop-box">
-                <form class="visit-form">
+                <form class="pop-form">
+                <div class="visit-form">
                     <div class="form-hint">Как часто вы заходите на сайт?</div>
                     <label class="label-visit">
                         <span class="hidden">Поле ввода ответа на вопрос</span>
@@ -414,9 +415,9 @@
                             <option selected>Почти каждый день</option>
                         </select>
                     </label>
-                </form>
+                </div>
                 <div class="form-hint">Вы подписаны на e-mail рассылку?</div>
-                <form class="subscribe">
+                <div class="subscribe">
                     <label class="radio-group">
                         <input type="radio" class="radio" name="radio-group">
                         <span class="radio-group-text">Да</span>
@@ -425,18 +426,19 @@
                         <input type="radio" class="radio" name="radio-group">
                         <span class="radio-group-text">Нет</span>
                     </label>
-                </form>
-                <form class="answer">
+                </div>
+                <div class="answer">
                     <div class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
                     <textarea class="field" placeholder="Может, больше рецептов?">
                         </textarea>
-                </form>
+                </div>
                 <label class="label-button">
                     <span class="hidden">Отправить ответ</span>
                     <button class="button-pop" type="submit">
                         Отправить
                     </button>
                 </label>
+            </form>
             </div>
 
         </div>
