@@ -3,7 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.test-d{
+    display: none;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1000;
+}
+.test-p{
+    display: none;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1000;
+}
+.test-m{
+    display: none;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1000;
+}
 body {
     margin: 0;
 }
@@ -181,7 +198,9 @@ h2 {
     background-image: url(../images/trend4.jpg);
 }
 
-
+.products {
+    margin-top: -10px;
+}
 
 .trend-card:last-child {
     margin-right: 0;
@@ -488,12 +507,10 @@ h3 {
 
 .product-box {
     width: 25%;
-    margin-right: 105px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 440px; */
 }
 
 .product-box:nth-of-type(3) {
@@ -773,8 +790,24 @@ h3 {
     .menu-link{
         display:none;
     }
+    .title {
+        font-size: 40px;
+        line-height: 55px;
+        padding-top: 78px;
+        text-transform: uppercase;
+    }
     .header-container {
-        padding: 50px 35px 130px 35px;
+        padding: 50px 35px 110px 35px;
+    }
+    .trend-header{
+        font-size: 18px;
+        margin-top: 47px;
+        margin-bottom: 0;
+    }
+    .trend-header::after {
+        content: "";
+        margin-bottom: 15px;
+
     }
     .trend-cards{
         flex-wrap:wrap;
@@ -782,6 +815,7 @@ h3 {
     .trend-card{
         width:49.5%;
         margin-bottom: 0.5%;
+        height: 250px;
     }
     .item{
         display:flex;
@@ -792,11 +826,16 @@ h3 {
     }
     .main{
         justify-content: space-around;
-    }
+        margin: 35px auto 4px auto;
+            }
     .news{
         margin-right: 35px;
+        width: 53%;
     }
-    .product-container{
+    .frame {
+       margin-bottom: 23px;
+    }
+     .product-container{
         flex-wrap: wrap;
         justify-content: left;
       }
@@ -841,13 +880,32 @@ h3 {
         font-size: 26px;
         line-height: 36px;
         padding-top: 40px;
+        padding-bottom: 75px;
+        text-transform: uppercase;
      }
+     h2 {
+         font-size: 16px;
+         line-height: 20px;
+         margin-bottom: 28px;
+     }
+     .frame {
+        margin-bottom: 20px;
+    }
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+     .trend-header {
+        margin-top: 30px;
+        font-size: 16px;
+    }
      .trend-cards{
         flex-wrap:wrap;
     }
      .trend-card{
         width:100%;
         margin-bottom: 5px;
+        height: 225px;
     }
     .item{
         display:flex;
