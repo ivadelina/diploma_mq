@@ -511,6 +511,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 70px;
 }
 
 .product-box:nth-of-type(3) {
@@ -886,14 +887,44 @@ h3 {
      h2 {
          font-size: 16px;
          line-height: 20px;
-         margin-bottom: 28px;
+         margin-bottom: 25px;
      }
      .frame {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    .img-news {
+        width: 98%;
+        margin-right: 0px;
+    }
+    .tegs-list {
+        margin-top: 10px;
     }
     .text {
         font-size: 14px;
         line-height: 20px;
+    }
+    .text-festival {
+        margin-bottom: 5px;
+    }
+    .aside-menu {
+        font-size: 16px;
+    }
+    .search {
+        margin-bottom: 40px;
+        margin-top: 63px;
+    }
+    .mail {
+        margin-top: 0px;
+    }
+    .botton-mail {
+        text-transform: uppercase;
+    }
+    .tags {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    .tag {
+        padding: 5px 10px;
     }
      .trend-header {
         margin-top: 30px;
@@ -944,7 +975,7 @@ h3 {
     }
     .product-box{
         width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 25px;
         margin-left: auto;
         margin-right: auto;
     }
