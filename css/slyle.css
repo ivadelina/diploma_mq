@@ -511,7 +511,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 70px;
+    flex-grow: 1;
 }
 
 .product-box:nth-of-type(3) {
