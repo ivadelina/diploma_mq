@@ -486,7 +486,7 @@ h3 {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 65px;
-    align-items: flex-end;
+    align-items: stretch;
 }
 
 .tit-products {
